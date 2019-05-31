@@ -29,6 +29,6 @@ def word_substituter(str)
 	arr.join(" ")
 end
 
-def bulk_tweet_shortener(arg)
-	puts "#{word_substituter(arg)}"
+def bulk_tweet_shortener(tweets)
+	puts "#{word_substituter(tweets)}"
 end
