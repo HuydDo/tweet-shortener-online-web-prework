@@ -11,21 +11,20 @@ def dictionary (str)
           "at" => "@",
           "and" => "&"
          }
-  arr = []
-	str = str.split
-  str.each do |word|
-    dic.each do |key,value|
-      if word == key
-        word = value
-				puts "new word: #{word}"
-			  arr << word
-			end
-    end
-	  arr << word
+	dic.each do |key,value|
+		if str == key
+			str = value
+			# puts "#{value}"
+		end
 	end
-  arr.join(" ")
+	str
 end
 
-def word_substituter(arg)
-  dictionary(arg)
-end
+def word_substituter(str)
+  arr = []
+	str = str.split			 
+  str.each do |word|
+		arr << dictionary(word)  
+	end
+	arr.join(" ")
+end	
