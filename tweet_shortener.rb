@@ -22,12 +22,11 @@ end
 
 def word_substituter(str)
   arr = []
-	str = str.split
+	str = str.split()
   str.each do |word|
 		arr << dictionary(word)
 	end
-  arr = arr.join(" ")
-	arr
+  arr.join(" ")
 end
 
 def bulk_tweet_shortener(tweets)
