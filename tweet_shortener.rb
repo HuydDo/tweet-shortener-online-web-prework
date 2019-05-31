@@ -22,9 +22,9 @@ end
 
 def word_substituter(str)
   arr = []
-	str = str.split			 
+	str = str.split
   str.each do |word|
-		arr << dictionary(word)  
+		arr << dictionary(word)
 	end
 	arr.join(" ")
-end	
+end
